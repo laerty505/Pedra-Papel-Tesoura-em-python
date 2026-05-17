@@ -1,4 +1,5 @@
 import funcoes
+import random
 
 print("-----PEDRA, PAPEL E TESOURA-----")
 print("Escolha uma Opção!")
@@ -16,7 +17,7 @@ while sair == False:
 
     match escolha_inicial:
         case 1:
-            pass
+            funcoes.jogar()
         case 2:
             pass
         case 3:
@@ -24,3 +25,6 @@ while sair == False:
             sair = True
         case _:
             print("Digite um número válido!")
+
+
+
