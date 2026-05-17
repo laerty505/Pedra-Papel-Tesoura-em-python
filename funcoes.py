@@ -50,10 +50,20 @@ def jogar():
         
     else:
         print("Computador venceu!\n")
-        
-    menu()
-        
 
+    jogar_novamente()
+    menu()
+
+        
+def jogar_novamente():
+    print('Deseja jogar novamente?')
+    print("1 - Sim")
+    print('2 - Não (Voltar ao menu)')
+    valor = int(input("Digite um número: "))
+    if valor == 1:
+        jogar()
+    else:
+        pass
 
 
 
