@@ -1,5 +1,5 @@
 import funcoes
-import random
+
 
 print("-----PEDRA, PAPEL E TESOURA-----")
 print("Escolha uma Opção!")
@@ -12,8 +12,11 @@ print("3 - Sair")
 sair = False
 
 while sair == False:
-
-    escolha_inicial = int(input("Digite um número para começar! "))
+    try:
+        escolha_inicial = int(input("Digite um número para começar! "))
+    except ValueError:
+        print("Digite apenas números!")
+        continue
 
     match escolha_inicial:
         case 1:
