@@ -1,13 +1,7 @@
 import funcoes
 
 
-print("-----PEDRA, PAPEL E TESOURA-----")
-print("Escolha uma Opção!")
-print()
-
-print("1 - Um Jogador")
-print("2 - Dois Jogadores")
-print("3 - Sair")
+funcoes.menu()
 
 sair = False
 
@@ -28,6 +22,8 @@ while sair == False:
             sair = True
         case _:
             print("Digite um número válido!")
+    
+    funcoes.menu()
 
 
 
