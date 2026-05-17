@@ -1,5 +1,8 @@
+import funcoes
+
 print("-----PEDRA, PAPEL E TESOURA-----")
 print("Escolha uma Opção!")
+print()
 
 print("1 - Um Jogador")
 print("2 - Dois Jogadores")
