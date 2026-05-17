@@ -23,6 +23,12 @@ def jogar():
         opcoes_computador = ['pedra', 'papel', 'tesoura']
 
         jogador = input("Escolha pedra, papel ou tesoura: ").lower()
+
+        if jogador not in opcoes_computador:
+            print("Escolha Inválida!")
+            continue
+
+
         computador = random.choice(opcoes_computador)
 
         print()
@@ -36,16 +42,12 @@ def jogar():
         if jogador == computador:
             print("Empate!\n")
         
-
         elif jogador == 'pedra' and computador == 'tesoura':
             print("Você venceu!\n")
         
-
         elif jogador == 'papel' and computador == 'pedra':
             print("Você venceu!\n")
         
-
-
         elif jogador == 'tesoura' and computador == 'papel':
             print("Você venceu!\n")
         
@@ -56,7 +58,7 @@ def jogar():
         print("S - Sim")
         print('N - Não (Voltar ao menu)')
         verifica_jogar_novamente = input("Digite (S/n): ").lower()
-        if verifica_jogar_novamente == "n":
+        if verifica_jogar_novamente != "s":
             break
         
            

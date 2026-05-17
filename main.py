@@ -3,9 +3,8 @@ import funcoes
 
 funcoes.menu()
 
-sair = False
 
-while sair == False:
+while True:
     try:
         escolha_inicial = int(input("Digite um número para começar! "))
     except ValueError:
@@ -19,7 +18,7 @@ while sair == False:
             pass
         case 3:
             print("Jogo Encerrado!")
-            sair = True
+            break
         case _:
             print("Digite um número válido!")
     
