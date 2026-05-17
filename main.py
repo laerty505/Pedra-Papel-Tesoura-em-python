@@ -15,7 +15,7 @@ while True:
         case 1:
             funcoes.jogar()
         case 2:
-            pass
+            funcoes.jogar_dois_jogadores()
         case 3:
             print("Jogo Encerrado!")
             break
