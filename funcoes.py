@@ -35,9 +35,6 @@ def jogar():
 
         print(f"Computador escolheu: {computador}\n")
     
-        if jogador not in opcoes_computador:
-            print("Escolha Inválida!")
-            return
 
         if jogador == computador:
             print("Empate!\n")
