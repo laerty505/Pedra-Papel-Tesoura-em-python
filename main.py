@@ -1,10 +1,12 @@
 import funcoes
 
 
-funcoes.menu()
-
-
 while True:
+
+    funcoes.limpar_terminal()
+
+    funcoes.menu()
+
     try:
         escolha_inicial = int(input("Digite um número para começar! "))
     except ValueError:
@@ -13,10 +15,13 @@ while True:
 
     match escolha_inicial:
         case 1:
+            funcoes.limpar_terminal()
             funcoes.jogar()
         case 2:
+            funcoes.limpar_terminal()
             funcoes.jogar_dois_jogadores()
         case 3:
+            funcoes.limpar_terminal()
             print("Jogo Encerrado!")
             break
         case _:

@@ -1,4 +1,5 @@
 import random
+import os
 from getpass import getpass
 
 def menu():
@@ -32,6 +33,7 @@ def jogar():
         computador = random.choice(opcoes_computador)
 
         print()
+        limpar_terminal()
 
         print(f"Computador escolheu: {computador}\n")
     
@@ -56,7 +58,14 @@ def jogar():
         print('N - Não (Voltar ao menu)')
         verifica_jogar_novamente = input("Digite (S/n): ").lower()
         if verifica_jogar_novamente != "s":
+            limpar_terminal()
             break
+        else:
+            limpar_terminal()
+
+
+
+
 
 def jogar_dois_jogadores():
     while True:
@@ -91,6 +100,7 @@ def jogar_dois_jogadores():
         
         else:
             print("Jogador 2 venceu!\n")
+
         print(f"Jogador 1 = {jogador1}")
         print(f"Jogador 2 = {jogador2}\n")
 
@@ -100,6 +110,10 @@ def jogar_dois_jogadores():
         verifica_jogar_novamente = input("Digite (S/n): ").lower()
         if verifica_jogar_novamente != "s":
             break
+
+
+def limpar_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 
            
