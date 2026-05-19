@@ -77,6 +77,8 @@ def jogar_dois_jogadores():
         if jogador1 not in opcoes:
             print("Escolha Inválida!")
             continue
+        limpar_terminal()
+
 
         print('Jogador 2, Escolha!\n')
 
@@ -85,6 +87,8 @@ def jogar_dois_jogadores():
         if jogador2 not in opcoes:
             print('Escolha inválida')
             continue
+
+        limpar_terminal()
 
         if jogador1 == jogador2:
             print("Empate!\n")
@@ -109,7 +113,10 @@ def jogar_dois_jogadores():
         print('N - Não (Voltar ao menu)')
         verifica_jogar_novamente = input("Digite (S/n): ").lower()
         if verifica_jogar_novamente != "s":
+            limpar_terminal()
             break
+        else:
+            limpar_terminal()    
 
 
 def limpar_terminal():
